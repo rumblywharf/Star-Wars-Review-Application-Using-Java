@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StarWarsBarGraphController">
+   <children>
+      <BarChart fx:id="starWarsBarChart" layoutX="33.0" layoutY="37.0" prefHeight="299.0" prefWidth="535.0" title="Star Wars Revnue (USD)">
+        <xAxis>
+          <CategoryAxis label="Title" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Revenue" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="tableButtons" layoutX="273.0" layoutY="336.0" mnemonicParsing="false" onAction="#onClick" text="Table" />
+   </children>
+</AnchorPane>
