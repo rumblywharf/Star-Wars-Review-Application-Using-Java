@@ -12,7 +12,7 @@ public class DataBaseConnection {
 
             try {
                 //1.    connect to the DB
-                conn = DriverManager.getConnection("jdbc:mysql://172.31.22.43:3306/Cameron1106175", "Cameron1106175", "XQx351esJC");
+                conn = DriverManager.getConnection("jdbc:mysql://172.31.22.43:3306/Cameron1106175?serverTimezone=EST", "Cameron1106175", "XQx351esJC");
                 //2.    create the sql statement object
                 statement = conn.createStatement();
                 //3.    create/execute the sql query
